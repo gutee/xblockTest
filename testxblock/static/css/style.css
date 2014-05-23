@@ -1,0 +1,15 @@
+#vid{
+    position:absolute;
+    top: 10px;
+    left: 10px;
+    height: 600px;
+    width: 1067px;
+}
+
+canvas#can{
+    position:absolute;
+    top: 10px;
+    left: 10px;
+    height: 600px;
+    width: 1067px;
+}
