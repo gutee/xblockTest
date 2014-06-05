@@ -41,13 +41,13 @@ class TestXBlock(XBlock):
         html = self.resource_string("static/html/index.html")
         frag = Fragment(html.format(self=self))
         #frag.add_css(self.resource_string("static/css/testxblock.css"))
-        #frag.add_javascript(self.resource_string("static/js/src/testxblock.js"))
+        frag.add_javascript(self.resource_string("static/js/src/testxblock.js"))
         #frag.initialize_js('TestXBlock')
 
         frag.add_css(self.resource_string("static/css/style.css"))
         frag.add_javascript(self.resource_string("static/js/src/jquery-1.11.0.js"))
         frag.add_javascript(self.resource_string("static/js/src/popcorn.js"))
-        frag.add_javascript(self.resource_string("static/js/src/test.js"))
+        #frag.add_javascript(self.resource_string("static/js/src/test.js"))
 
         frag.initialize_js('TestXBlock')
 
